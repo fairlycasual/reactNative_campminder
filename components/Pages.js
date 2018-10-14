@@ -4,6 +4,7 @@ import {
   Dimensions,
   StyleSheet,
   WebView,
+  ScrollView,
   Button
 } from 'react-native';
 
@@ -57,7 +58,7 @@ class WebViewPages extends Component {
       })
   
       return (
-        <View>
+        <ScrollView>
           <WebView
             source={{ uri: this.pageQueue[this.state.currentIndex] }}
             style={styles.pageContainer}
@@ -72,7 +73,7 @@ class WebViewPages extends Component {
             color="white"
             onPress={this.incrementPage} />
           </View>
-        </View>
+        </ScrollView>
       )
     }
 
