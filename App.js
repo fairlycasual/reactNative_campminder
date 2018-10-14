@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, ScrollView, Dimensions} from 'react-native';
 import Header from './components/Header';
-import VideoPlayer from './components/Video';
+import PageView from './components/Pages';
 
 export default class App extends Component {
   constructor() {
@@ -68,7 +68,7 @@ export default class App extends Component {
         </View>
           <ScrollView style={styles.bodyContainer}>
             <View style={styles.videoContainer}>
-                <VideoPlayer />
+                 <PageView />
             </View>
               <Text style={styles.textContainer}>Welcome to CampMinder! {"\n"}This is a test of applying WebView components in a React Native application. </Text>
           </ScrollView>

@@ -80,7 +80,7 @@ class WebViewPages extends Component {
 
 
 
-export default class VideoPlayer extends Component {
+export default class PageView extends Component {
 
   render() {
     const pageWidth = Dimensions.get('window').width;
